@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mainhakaton</title>
+    <style>
+        .form{position: absolute;top: 50%;left: 40%}
+        .loginn{text-align: center;font-size: 20px;width: 350px; height: 50px;background-color:bisque}
+        .subm{text-align: center;text-transform: uppercase;font-size: 20px;width: 360px; margin-top: 50px;height: 50px;background-color:bisque}
+        .img1{position: absolute;left: 3%;width: 75px}
+        .subscribe{position: absolute;top: 50%;right: 220%;background-color:rgb(159, 222, 95);width: 150px;height: 200px;border-radius: 5px}
+        .SUB{background-color:rgb(159, 222, 95);width: 150px;height: 30px;margin-top: -50px}
+        .text{font-weight: bold; font-size: large}
+        .blog{position: absolute; top: 90%; left:200%; width: 150px;height: 200px;background-color: rgb(159, 222, 95);border-radius: 5px}
+        .t2{font-weight: bold; font-size: large}
+        .cont{font-weight: bold; font-size: large}
+        .con{position: absolute;bottom: 150%;left: 200%; width: 150px;height: 100px;background-color: brown;border-radius: 5px}
+        .h{position: absolute;top: -180%;right: -30%; background-color: rgb(103,214,93);width: 600px; text-align: center}
+        .ta{position:absolute;top: 170%;right: 220%;width: 150px; font-weight: bold; font-size: large;background-color: brown;border-radius: 5px}
+        .blog1{position: absolute; bottom: 30%; left:200%; width: 150px;height: 150px;background-color: rgb(159, 222, 95);border-radius: 5px}
+        .t3{font-weight: bold; font-size: large}
+        .ppp{position: absolute;top: 40%;left: 2%;width: 350px;background-color:rgb(159, 222, 95);font-weight: bold}
+    </style>
+</head>
+<body bgcolor="363535">
+    <img class="img1" src="static/logo.jpg">
+    <form class="form" method="post" action={{ url_for('index') }}>
+        <div>
+            <input class="loginn" type="text" placeholder="Введите название оборудования" name="log">
+        </div>
+        <div>
+            <input class="subm" type="submit" value="Перейти">
+        </div>
+        <div class="ppp">Поливальная машина№1; Поливальная машина№2; Поливальная машина№3</div>
+        <div class="subscribe">
+            <button class="SUB">SUBSCRIBE</button>
+            <p class="text">1) Поддержка 24/7
+               2) Возможность дистанционного просмотра оборудования
+            </p>
+        </div>
+        <div class="blog">
+            <p class="t2">Как мы рабоатем: на оборудовании стоят датчики, которые следят за его состоянием. Мы считываем их и показываем данные Вам
+            </p>
+       </div>
+       <div class="con"><p class="cont">Горячая линия: +7(903)303-03-03</p>
+       </div>
+       <div class="h">
+        <h2>СЕРВИС ПО ОТСЛЕЖИВАНИЮ ОБОРУДОВАНИЯ "ЧЕТВЕРКА". СЛЕДИТЕ ЗА СВОИМ ОБОРУДОВАНИЕМ ЛЕГКО!</h2>
+       </div>
+       <div class="act">
+        <p class="ta">До конца июля скидка 50%!</p>
+       </div>
+       <div class="blog1">
+        <p class="t3">Мы позволяем владельцам с/х оборудования оперативно за ним следить
+       </p>
+       </div>
+</body>
+</html>
